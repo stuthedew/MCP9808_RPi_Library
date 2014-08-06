@@ -56,4 +56,4 @@ docs/_build/
 # Misc
 .AppleDouble
 lib
-
+.DS_Store
