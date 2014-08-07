@@ -68,6 +68,10 @@ class MCP9808:
       temp /= 5
       temp *= 9
       temp += 32
+
+    elif(unit == 'K'):
+      temp += 273.15
+
     return temp
 
 
@@ -85,6 +89,8 @@ def main():
   therm = MCP9808()
   therm.begin()
   print("The temperature is currently {} °C.".format(therm.getTemp()))
+  print("The temperature is currently {} °F.".format(therm.getTemp('F')))
+  print("The temperature is currently {} K.".format(therm.getTemp('K')))
 
   return 0
 
