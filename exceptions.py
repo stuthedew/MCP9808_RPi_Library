@@ -1,5 +1,6 @@
 """
 exceptions
+Based on plotly exception module <https://github.com/plotly/python-api/blob/master/plotly/exceptions.py>.
 ==========
 
 A module that contains MCP9809 exception hierarchy.
